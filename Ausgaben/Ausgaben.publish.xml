@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseName>Ausgaben</TargetDatabaseName>
+    <DeployScriptFileName>Ausgaben.sql</DeployScriptFileName>
+    <TargetConnectionString>Data Source=mdmsua.database.windows.net;User ID=mdmsua;Pooling=False</TargetConnectionString>
+    <ProfileVersionNumber>1</ProfileVersionNumber>
+    <BlockOnPossibleDataLoss>True</BlockOnPossibleDataLoss>
+    <DeployDatabaseInSingleUserMode>False</DeployDatabaseInSingleUserMode>
+    <BackupDatabaseBeforeChanges>False</BackupDatabaseBeforeChanges>
+    <NoAlterStatementsToChangeCLRTypes>False</NoAlterStatementsToChangeCLRTypes>
+    <GenerateSmartDefaults>True</GenerateSmartDefaults>
+    <IncludeTransactionalScripts>True</IncludeTransactionalScripts>
+    <ScriptDatabaseCompatibility>True</ScriptDatabaseCompatibility>
+    <ScriptDatabaseCollation>True</ScriptDatabaseCollation>
+    <ScriptDeployStateChecks>True</ScriptDeployStateChecks>
+    <TreatVerificationErrorsAsWarnings>True</TreatVerificationErrorsAsWarnings>
+    <DropObjectsNotInSource>True</DropObjectsNotInSource>
+    <DropRoleMembersNotInSource>True</DropRoleMembersNotInSource>
+    <DropPermissionsNotInSource>True</DropPermissionsNotInSource>
+    <IgnoreAnsiNulls>False</IgnoreAnsiNulls>
+    <IgnoreFileAndLogFilePath>False</IgnoreFileAndLogFilePath>
+    <IgnoreFileSize>False</IgnoreFileSize>
+    <IgnoreFilegroupPlacement>False</IgnoreFilegroupPlacement>
+    <IgnoreFillFactor>False</IgnoreFillFactor>
+    <IgnoreFullTextCatalogFilePath>False</IgnoreFullTextCatalogFilePath>
+    <IgnoreIndexPadding>False</IgnoreIndexPadding>
+    <IgnoreKeywordCasing>False</IgnoreKeywordCasing>
+    <IgnoreLoginSids>False</IgnoreLoginSids>
+    <IgnoreObjectPlacementOnPartitionScheme>False</IgnoreObjectPlacementOnPartitionScheme>
+    <IgnoreQuotedIdentifiers>False</IgnoreQuotedIdentifiers>
+    <IgnoreRouteLifetime>False</IgnoreRouteLifetime>
+    <IgnoreSemicolonBetweenStatements>False</IgnoreSemicolonBetweenStatements>
+    <IgnoreWhitespace>False</IgnoreWhitespace>
+  </PropertyGroup>
+</Project>
