@@ -69,9 +69,11 @@
     <Folder Include="Properties" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="Accounts.sql" />
+    <Build Include="dbo.Accounts.sql" />
+    <Build Include="dbo.Users.sql" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Ausgaben.publish.xml" />
+    <None Include="Azure.publish.xml" />
+    <None Include="Local.publish.xml" />
   </ItemGroup>
 </Project>
