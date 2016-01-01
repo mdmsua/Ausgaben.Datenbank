@@ -72,6 +72,7 @@
     <Build Include="dbo.Accounts.sql" />
     <Build Include="dbo.Users.sql" />
     <Build Include="dbo.Categories.sql" />
+    <Build Include="dbo.Payments.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Azure.publish.xml" />
