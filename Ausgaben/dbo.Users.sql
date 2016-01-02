@@ -1,8 +1,0 @@
-﻿CREATE TABLE [dbo].[Users]
-(
-	[Id] INT NOT NULL IDENTITY(1,1),
-	[Name] NVARCHAR(128) NOT NULL,
-	CONSTRAINT [PK_Users_Id] PRIMARY KEY NONCLUSTERED (Id Asc),
-	CONSTRAINT [CK_Users_Name] CHECK (LEN(Name) > 0),
-	CONSTRAINT [UQ_Users_Name] UNIQUE (Name)
-)

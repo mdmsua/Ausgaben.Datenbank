@@ -1,0 +1,11 @@
+﻿CREATE TABLE [dbo].[Accounts]
+(
+	[Id]			UNIQUEIDENTIFIER	NOT NULL,
+	[Name]			NVARCHAR(512)		NOT NULL,
+	[Description]	NVARCHAR(MAX)		NULL,
+	[User]			NVARCHAR(128)		NOT NULL,
+	[Version]		TIMESTAMP			NOT NULL,
+	[CreatedAt]		DATETIMEOFFSET		NOT NULL,
+	[UpdatedAt]		DATETIMEOFFSET		NULL,
+	[Deleted]		BIT					NOT NULL
+)

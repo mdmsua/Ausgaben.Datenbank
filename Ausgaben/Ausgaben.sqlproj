@@ -67,15 +67,33 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="dbo.Accounts" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="dbo.Accounts.sql" />
-    <Build Include="dbo.Users.sql" />
     <Build Include="dbo.Categories.sql" />
     <Build Include="dbo.Payments.sql" />
+    <Build Include="dbo.Accounts\dbo.Accounts.table.sql" />
+    <Build Include="dbo.Accounts\dbo.Accounts.Delete.trigger.sql" />
+    <Build Include="dbo.Accounts\dbo.Accounts.Update.trigger.sql" />
+    <Build Include="dbo.Accounts\dbo.Accounts.Name.User.index.sql" />
+    <Build Include="dbo.Accounts\dbo.Accounts.User.index.sql" />
+    <Build Include="dbo.Accounts\dbo.Accounts.Deleted.constraint.sql" />
+    <Build Include="dbo.Accounts\dbo.Accounts.CreatedAt.constraint.sql" />
+    <Build Include="dbo.Accounts\dbo.Accounts.User.constraint.sql" />
+    <Build Include="dbo.Accounts\dbo.Accounts.Name.constraint.sql" />
+    <Build Include="dbo.Accounts\dbo.Accounts.Id.key.sql" />
+    <Build Include="dbo.Accounts\dbo.Accounts.Id.constraint.sql" />
+    <Build Include="dbo.Accounts\dbo.Accounts.Insert.trigger.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Azure.publish.xml" />
     <None Include="Local.publish.xml" />
+    <None Include="Ausgaben.publish.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PreDeploy Include="Script.PreDeployment.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Script.PostDeployment.sql" />
   </ItemGroup>
 </Project>
