@@ -70,6 +70,7 @@
     <Folder Include="dbo" />
     <Folder Include="dbo\dbo.Accounts" />
     <Folder Include="deploy" />
+    <Folder Include="rls" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\dbo.Accounts\dbo.Accounts.CreatedAt.constraint.sql" />
@@ -89,11 +90,14 @@
     <Build Include="deploy\deploy.sql" />
     <Build Include="deploy\deploy.DisableTriggers.sql" />
     <Build Include="deploy\deploy.EnableTriggers.sql" />
+    <Build Include="rls\rls.schema.sql" />
+    <Build Include="rls\rls.fn_securitypredicate.function.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Azure.publish.xml" />
     <None Include="Local.publish.xml" />
     <None Include="Ausgaben.publish.xml" />
+    <Build Include="rls\rls.User.policy.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Script.PostDeployment.sql" />
