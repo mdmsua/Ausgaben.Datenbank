@@ -84,6 +84,8 @@
     <Build Include="dbo.Accounts\dbo.Accounts.Id.key.sql" />
     <Build Include="dbo.Accounts\dbo.Accounts.Id.constraint.sql" />
     <Build Include="dbo.Accounts\dbo.Accounts.Insert.trigger.sql" />
+    <Build Include="dbo.DisableTriggers.sql" />
+    <Build Include="EnableTriggers.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Azure.publish.xml" />
@@ -91,9 +93,13 @@
     <None Include="Ausgaben.publish.xml" />
   </ItemGroup>
   <ItemGroup>
-    <PreDeploy Include="Script.PreDeployment.sql" />
+    <PostDeploy Include="Script.PostDeployment.sql" />
   </ItemGroup>
   <ItemGroup>
-    <PostDeploy Include="Script.PostDeployment.sql" />
+    <ArtifactReference Include="$(DacPacRootPath)\Extensions\Microsoft\SQLDB\Extensions\SqlServer\AzureV12\SqlSchemas\master.dacpac">
+      <HintPath>$(DacPacRootPath)\Extensions\Microsoft\SQLDB\Extensions\SqlServer\AzureV12\SqlSchemas\master.dacpac</HintPath>
+      <SuppressMissingDependenciesErrors>False</SuppressMissingDependenciesErrors>
+      <DatabaseVariableLiteralValue>master</DatabaseVariableLiteralValue>
+    </ArtifactReference>
   </ItemGroup>
 </Project>

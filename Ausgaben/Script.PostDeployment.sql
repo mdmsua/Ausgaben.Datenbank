@@ -9,4 +9,6 @@ Post-Deployment Script Template
                SELECT * FROM [$(TableName)]					
 --------------------------------------------------------------------------------------
 */
-sp_msforeachtable 'ALTER TABLE ? ENABLE TRIGGER all'
+--sp_msforeachtable 'ALTER TABLE ? ENABLE TRIGGER all'
+EXEC dbo.DisableTriggers
+EXEC dbo.EnableTriggers
