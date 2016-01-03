@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Move Schema" Key="59bcb648-5b09-404f-bd5e-fd5d8ec5129f" ChangeDateTime="01/03/2016 21:52:12">
+    <Property Name="ElementName" Value="[dbo].[DisableTriggers]" />
+    <Property Name="ElementType" Value="SqlProcedure" />
+    <Property Name="NewSchema" Value="deploy" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+  <Operation Name="Move Schema" Key="b1899f46-2f6e-4874-b2a3-d511f2a1aadd" ChangeDateTime="01/03/2016 21:52:30">
+    <Property Name="ElementName" Value="[dbo].[EnableTriggers]" />
+    <Property Name="ElementType" Value="SqlProcedure" />
+    <Property Name="NewSchema" Value="deploy" />
+    <Property Name="IsNewSchemaExternal" Value="False" />
+  </Operation>
+</Operations>
