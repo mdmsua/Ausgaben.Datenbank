@@ -33,5 +33,6 @@
     <IgnoreRouteLifetime>False</IgnoreRouteLifetime>
     <IgnoreSemicolonBetweenStatements>False</IgnoreSemicolonBetweenStatements>
     <IgnoreWhitespace>False</IgnoreWhitespace>
+    <DoNotDropUsers>True</DoNotDropUsers>
   </PropertyGroup>
 </Project>
