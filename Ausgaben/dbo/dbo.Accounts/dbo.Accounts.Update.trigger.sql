@@ -13,6 +13,7 @@
 		SET
 			Name = i.Name,
 			Description = i.Description,
+			Balance = i.Balance,
 			UpdatedAt = SYSDATETIMEOFFSET()
 		OUTPUT i.[Id],i.[Version], i.[UpdatedAt] INTO @generated
 		FROM dbo.Accounts a INNER JOIN INSERTED i ON a.Id = i.Id

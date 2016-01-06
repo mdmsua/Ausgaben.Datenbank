@@ -4,6 +4,7 @@
 	[Name]			NVARCHAR(512)		NOT NULL,
 	[Description]	NVARCHAR(MAX)		NULL,
 	[User]			NVARCHAR(128)		NOT NULL,
+	[Balance]		DECIMAL(11,2)		NOT NULL,
 	[Version]		TIMESTAMP			NOT NULL,
 	[CreatedAt]		DATETIMEOFFSET		NOT NULL,
 	[UpdatedAt]		DATETIMEOFFSET		NULL,

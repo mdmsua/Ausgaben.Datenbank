@@ -4,7 +4,7 @@
     <IncludeCompositeObjects>True</IncludeCompositeObjects>
     <TargetDatabaseName>Ausgaben</TargetDatabaseName>
     <DeployScriptFileName>Ausgaben.sql</DeployScriptFileName>
-    <TargetConnectionString>Data Source=.\EXP2014;Integrated Security=True;Pooling=False</TargetConnectionString>
+    <TargetConnectionString>Data Source=(localdb)\ProjectsV13;Integrated Security=True;Persist Security Info=False;Pooling=False;MultipleActiveResultSets=False;Connect Timeout=60;Encrypt=False;TrustServerCertificate=True</TargetConnectionString>
     <ProfileVersionNumber>1</ProfileVersionNumber>
     <BlockOnPossibleDataLoss>True</BlockOnPossibleDataLoss>
     <DeployDatabaseInSingleUserMode>False</DeployDatabaseInSingleUserMode>
@@ -33,6 +33,6 @@
     <IgnoreRouteLifetime>False</IgnoreRouteLifetime>
     <IgnoreSemicolonBetweenStatements>False</IgnoreSemicolonBetweenStatements>
     <IgnoreWhitespace>False</IgnoreWhitespace>
-    <DoNotDropUsers>True</DoNotDropUsers>
+    <DoNotDropUsers>False</DoNotDropUsers>
   </PropertyGroup>
 </Project>

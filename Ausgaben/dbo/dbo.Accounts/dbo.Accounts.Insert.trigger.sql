@@ -10,10 +10,10 @@
 			[CreatedAt]	DATETIMEOFFSET
 		)
 		INSERT INTO dbo.Accounts
-			([Name], [Description], [User])
+			([Name], [Description], [User], [Balance])
 		OUTPUT inserted.[Id], inserted.[Version], inserted.[CreatedAt] INTO @generated
 		SELECT
-			 [Name], [Description], [User]
+			 [Name], [Description], [User], [Balance]
 		FROM inserted
 		SELECT g.[Id], g.[Version], g.[CreatedAt] from @generated g JOIN dbo.Accounts a on g.Id = a.Id
 	END
