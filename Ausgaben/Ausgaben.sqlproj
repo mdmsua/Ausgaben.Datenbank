@@ -71,6 +71,7 @@
     <Folder Include="dbo\dbo.Accounts" />
     <Folder Include="deploy" />
     <Folder Include="rls" />
+    <Folder Include="dbo\dbo.Categories" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\dbo.Accounts\dbo.Accounts.CreatedAt.constraint.sql" />
@@ -85,13 +86,16 @@
     <Build Include="dbo\dbo.Accounts\dbo.Accounts.Update.trigger.sql" />
     <Build Include="dbo\dbo.Accounts\dbo.Accounts.User.constraint.sql" />
     <Build Include="dbo\dbo.Accounts\dbo.Accounts.User.index.sql" />
-    <Build Include="dbo\dbo.Categories.sql" />
     <Build Include="dbo\dbo.Payments.sql" />
     <Build Include="deploy\deploy.sql" />
     <Build Include="deploy\deploy.DisableTriggers.sql" />
     <Build Include="deploy\deploy.EnableTriggers.sql" />
     <Build Include="rls\rls.schema.sql" />
     <Build Include="rls\rls.fn_securitypredicate.function.sql" />
+    <Build Include="deploy\deploy.InstallCategories.sql" />
+    <Build Include="dbo\dbo.Categories\dbo.Categories.table.sql" />
+    <Build Include="dbo\dbo.Categories\dbo.Categories.Id.key.sql" />
+    <Build Include="dbo\dbo.Categories\dbo.Categories.Name.constraint.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Azure.publish.xml" />

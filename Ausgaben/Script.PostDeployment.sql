@@ -10,5 +10,6 @@ Post-Deployment Script Template
 --------------------------------------------------------------------------------------
 */
 --sp_msforeachtable 'ALTER TABLE ? ENABLE TRIGGER all'
-EXEC [deploy].[DisableTriggers]
-EXEC [deploy].[EnableTriggers]
+exec deploy.InstallCategories
+exec deploy.DisableTriggers
+exec deploy.EnableTriggers
