@@ -1,6 +1,7 @@
-﻿CREATE TABLE [dbo].[Categories]
+﻿create table [dbo].[Categories]
 (
-	[Id]		HIERARCHYID		NOT NULL,
-	[Name]		NVARCHAR(128)	NOT NULL,
-	[Type]		BIT				NULL	-- 0: expense, 1: income
+	[Id]		smallint		not null,
+	[ParentId]	smallint		null,
+	[Name]		nvarchar(128)	not null,
+	[Type]		bit				null	-- 0: expense, 1: income
 )

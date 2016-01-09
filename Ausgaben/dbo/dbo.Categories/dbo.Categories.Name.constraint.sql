@@ -1,3 +1,3 @@
-﻿ALTER TABLE [dbo].[Categories]
-	ADD CONSTRAINT [CK_Categories_Name]
-	CHECK (LEN(Name) > 0)
+﻿alter table [dbo].[Categories]
+	add constraint [CK_Categories_Name]
+	check (LEN(Name) > 0)
