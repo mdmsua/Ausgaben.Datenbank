@@ -1,3 +1,3 @@
-﻿CREATE SECURITY POLICY [rls].[User]
-    ADD FILTER PREDICATE [rls].[fn_securitypredicate]([User]) ON [dbo].[Accounts]
-    WITH (STATE = ON)
+﻿create security policy rls.[User]
+    add filter predicate rls.UserPredicate([User]) on dbo.Accounts
+    with (state = on)
