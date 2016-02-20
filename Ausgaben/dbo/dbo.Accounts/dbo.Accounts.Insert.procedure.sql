@@ -9,6 +9,7 @@
 	@Deleted		bit				= 0
 as
 begin
+	set @User = cast(session_context(N'User') as nvarchar(128))
 	insert into dbo.Accounts ([Id], [Name], [Description], [User], [Balance])
 	values (@Id, @Name, @Description, @User, @Balance)
 	select [Version] from dbo.Accounts where Id = @Id

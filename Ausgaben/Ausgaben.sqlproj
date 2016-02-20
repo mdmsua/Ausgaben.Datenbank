@@ -117,6 +117,7 @@
     <None Include="Local.publish.xml" />
     <None Include="Ausgaben.publish.xml" />
     <Build Include="rls\rls.User.policy.sql" />
+    <None Include="Staging.publish.xml" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Script.PostDeployment.sql" />
